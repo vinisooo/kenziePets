@@ -10,7 +10,7 @@ function verifyLogin(){
         const mainHeaderBtns = document.getElementById("main-header-btns");
         mainHeaderBtns.innerHTML =
         `
-        <a class="default-bordered-btn" href="../pages/profile/profile.html" target="_blank">Perfil</a>
+        <a class="default-bordered-btn" href="./pages/profile/profile.html" target="_blank">Perfil</a>
         <button class="default-fill-btn" id="log-out">Logout</button>
         `;
 
