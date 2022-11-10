@@ -1,0 +1,34 @@
+.dspl-flex{
+    display: flex;
+}
+.dspl-block{
+    display: block;
+}
+.dspl-inlineB{
+    display: inline-block;
+}
+.dspl-inline{
+    display: inline;
+}
+.dspl-none{
+    display: none;
+}
+.dspl-initial{
+    display: initial!important;
+}
+
+
+.wFullPerc{
+    width: var(--width-fullPercent);
+}
+.wHalfPerc{
+    width: var(--width-halfPercent);
+}
+
+.wFullvw{
+    width: var(--width-fullvw);
+}
+.wHalfvw{
+    width: var(--width-halfvw);
+}
+

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --brand100: #00cecb;
+  --brand200: #00BBCB;
+
+  --gray100: #1B1C1E;  
+  --gray200: #90A4AE; 
+  --gray300: #F1EEF7;
+  
+  --green: #33CC66;
+  --green200: #2db359;
+  --red: #ff5e5b;  
+
+  --bg-modal: #1b1c1ea6;
+
+  --black-fixed: #000000;  
+  --white-fixed: #FFFFFF; 
+
+  --font-size-1: 1.75em;    /* 28px */
+  --font-size-2: 1.5em;     /* 24px */
+  --font-size-3: 1em;       /* 16px */
+  --font-size-4: 0.875em;   /* 14px */
+  --font-size-5: 0.75em;   /* 12px */
+  --font-size-6: 0.5em;     /* 8px */
+  
+  --font-weight-1: 100;
+  --font-weight-2: 200;
+  --font-weight-3: 300;
+  --font-weight-4: 400;
+  --font-weight-5: 500;
+  --font-weight-6: 600;
+  --font-weight-7: 700;
+  --font-weight-8: 800;
+  --font-weight-9: 900;
+
+  --line-height: 150%;
+  --line-heigth-2: 110%;
+
+  --width-fullPercent: 100%;
+  --width-halfPercent: 50%;
+
+  --width-fullvw: 100vw;
+  --width-halfvw: 50vw;
+
+  --height-fullPercent: 100%;
+  --height-halfPercent: 50%;
+
+  --height-fullvh: 100vh;
+  --height-halfvh: 50vh;
+  
+  --radius-1: 4px;
+  --radius-2: 30px;
+  --radius-50: 50%;
+
+  --pointer: pointer;
+
+  --animation-duration: 0.4s;
+  --animation-type: ease;
+}
+
+.container{
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toast{
+
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  background: var(--white-fixed);
+  border-radius: 10px;
+  padding: 30px;
+  color: var(--sucess100);
+  z-index: 10!important;
+  width: fit-content;
+  
+  animation: toastIt 2000ms ease-in;
+  
+  }
+  
+  @keyframes toastIt {
+  
+  0% {left: 30px; bottom:-100px}
+  25% {left: 30px; bottom:50px}
+  50% {left: 30px; bottom:50px}
+  100% {left: 30px; bottom:-100px}
+  
+  
+  }

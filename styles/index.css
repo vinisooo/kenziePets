@@ -1,0 +1,31 @@
+main {
+    position: absolute;
+    left: 300px;
+    top: 192px;
+    width: 950px;
+    height: 470px;
+}
+main > ul> li {
+    width: var(--width-fullPercent);
+    width: 200px;
+    height: 272px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(78, 32, 150, 0.25);
+    border-radius: 4px;
+}
+main > ul> li > h2{
+    margin: 10px;
+    font-style: normal;
+    font-weight: var(--font-weight-7);
+    font-size: var(--font-size-2);
+    line-height: var(--line-heigth-2);
+    color: var(--brand100);
+}
+main > ul> li > span{
+    margin: 10px;
+    font-style: normal;
+    font-weight: var(--font-weight-6);
+    font-size: var(--font-size-6);
+    line-height: 11px;
+    color: var(--gray200);
+}

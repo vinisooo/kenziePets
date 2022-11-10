@@ -1,0 +1,86 @@
+#modalHome {
+  width: var(--width-fullvw);
+  height: var(--height-fullvh);
+  background-color: var(--bg-modal);
+  position: fixed;
+  z-index: 9;
+  top: 0;
+}
+
+.divModal {
+  background-color: var(--white-fixed);
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 520px;
+  width: var(--width-fullvw);
+  max-height: 380px;
+  height: var(--height-fullPercent);
+  animation: displayModal 0.5s ease;
+}
+
+.divModal #closeModal {
+  border: none;
+  background: transparent;
+  cursor: var(--pointer);
+}
+
+.divModal div:nth-child(1) {
+  background-color: var(--brand100);
+  height: 42px;
+  padding: 0px 3px;
+}
+
+.divModal div:nth-child(2) {
+  padding: 0 20%;
+}
+
+.divModal div:nth-child(2) h2 {
+  color: var(--brand100);
+}
+
+#form-register input {
+  width: 100%;
+  height: 27px;
+  background: var(--white-fixed);
+  border: 1px solid var(--brand100);
+  border-radius: 16px;
+  padding: 0 10px;
+}
+#form-register input::placeholder {
+  color: var(--brand200);
+}
+
+#form-register button {
+  width: 100%;
+}
+
+.divModal div:nth-child(3) {
+  padding: 12px;
+  background: var(--brand100);
+}
+
+
+/*Esssa é a animaçao de quando se fecha o madal */
+.close-modal{
+    animation: closeModal 0.5s ease;
+}
+
+@keyframes closeModal{
+  0%{
+      opacity: 1;
+      transform: translateY(0);
+  }100%{
+      opacity: 0;
+      transform: translateY(-100vh);
+  }
+}
+
+@keyframes displayModal{
+  0%{
+      opacity: 0;
+      transform: translateY(-100vh);
+  }100%{
+      opacity: 1;
+      transform: translateY(0vh);
+  }
+}

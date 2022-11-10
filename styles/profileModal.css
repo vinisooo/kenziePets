@@ -1,0 +1,94 @@
+#modalProfile{
+    width: var(--width-fullvw);
+    height: var(--height-fullvh);
+    background-color: var(--bg-modal);
+    position: fixed;
+    z-index: 3;
+    top: 0;
+}
+
+#modalProfile form{
+    background-color: var(--white-fixed);
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 520px;
+    width: var(--width-fullvw);
+    max-height: 380px;
+    height: var(--height-fullPercent);
+    animation: displayModal 0.5s ease;
+}
+
+#modalProfile form input , #modalProfile form select{
+    width: var(--width-fullPercent);
+    height: 27px;
+    background: var(--white-fixed);
+    border: 1px solid var(--brand100);
+    border-radius: 16px;
+    padding: 0 10px;
+}
+#modalProfile form input:focus{
+    border-color: var(--brand200);
+    background-color: var(--gray300);
+}
+#modalProfile form input:disabled{
+    opacity: 0.5;
+}
+
+#modalProfile form #closeModal{
+    border: none;
+    background: transparent;
+    cursor: var(--pointer);
+}
+
+#modalProfile form div:nth-child(1){
+    background-color: var(--brand100);
+    height: 42px;
+    padding: 0px 3px;
+}
+
+
+#modalProfile form div:nth-child(2){
+    width: var(--width-halfPercent);
+    margin: 0 auto;
+}
+#modalProfile form div:nth-child(2) button{
+    width: var(--width-fullPercent);
+}
+#modalProfile form div:nth-child(2) button:hover{
+    background-color: var(--brand200);
+}
+
+
+#modalProfile form div:nth-child(2) h2{
+    color: var(--brand100);
+}
+
+#modalProfile form div:nth-child(3){
+    padding: 12px;
+    background: var(--brand100);
+} 
+
+
+.close-modal{
+    animation: closeModal 0.5s ease !important;
+}
+
+@keyframes displayModal{
+    0%{
+        opacity: 0;
+        transform: translateY(-100vh);
+    }100%{
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+}
+
+@keyframes closeModal{
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }100%{
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+}

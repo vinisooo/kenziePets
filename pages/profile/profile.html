@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Kenzie Pets</title>
+
+    <link rel="icon" href="../../assets/blue-logo.png">
+
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/display.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/propFlex.css">
+    <link rel="stylesheet" href="../../styles/texts.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/profileModal.css">
+    <link rel="stylesheet" href="../../styles/menu.css">
+    <link rel="stylesheet" href="../../styles/error.css">
+    <link rel="stylesheet" href="./profile.css">
+
+</head>
+<body>
+    
+    <header class="container-menu">
+        <a href="../../index.html" class="dspl-flex align__items-center">
+            <img width="35px" src="../../assets/blue-logo.png" alt="">
+            <h1 class="title1 font-w700" >KenziePets</h1>
+        </a>
+        <div class="dspl-flex flex__direc-row gap10">
+          <button class="default-bordered-btn">Home</button>
+          <button class="default-fill-btn">Logout</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <header class="profile-header dspl-flex align__items-center flex__direc-column"> 
+            <figure class="profile-pic dspl-flex just__cont-center align__items-center">
+                <img id="imgProfile" src="../../assets/no-image.png" alt="" title="">
+            </figure>
+        </header>
+        
+        <!-- USER INFORMATIONS SECTION -->
+        <section class="user-info user-info-card dspl-flex flex__direc-column justy__cont-SB">
+            <header class="user-info-header dspl-flex justy__cont-center">
+                <h3 class="text2 user-info-title">Dados Pessoais</h3>
+            </header>
+
+            <div class="user-infos dspl-flex flex__direc-column">
+                <h6 class="text3 font-w600" id="name"><span>Nome: </span>Nome do usuario</h6>
+                <h6 class="text3 font-w600" id="email"><span>E-mail: </span>email@gmail.com</h6>
+                
+            </div>
+            <footer class="user-info-footer dspl-flex justy__cont-center">
+                <button id="update-infos" class="default-fill-btn">Atualizar informações</button>
+                <button id="delete-account" class="default-bordered-btn red-border-btn">Deletar conta</button>
+            </footer>
+        </section>
+
+
+        <!-- REGISTERED PETS SECTION -->
+
+        <section class="pets-section container">
+            <button id="register-new-pet" class="default-fill-btn green-bg-btn">Cadastrar novo pet</button>
+
+            <ul id="pets-list" class="pets-list dspl-flex justy__cont-SB flex-wrap gap50">
+
+                <!-- PETS GOES HERE -->
+
+                <li class="profile-page-card dspl-flex justy__cont-SB align__items-center">
+                    <figure class="pet-pic dspl-flex justy__cont-center align__items-center">
+                        <img src="../../assets/no-image.png" alt="">
+                    </figure>
+
+                    <div class="pet-infos dspl-flex flex__direc-column justy__cont-center">
+
+                        <h3 class="text-4 font-w600"><span>Nome:</span>Nome</h3>
+                        <h3 class="text-4 font-w600"><span>Espécie:</span>Raça</h3>
+                        <h3 class="text-4 font-w600"><span>Adotável:</span>Sim</h3>
+
+                        <button id="update-pet" class="default-fill-btn">Atualizar</button>
+                    </div>
+                </li>
+                <li class="profile-page-card dspl-flex justy__cont-SB align__items-center">
+                    <figure class="pet-pic dspl-flex justy__cont-center align__items-center">
+                        <img src="../../assets/no-image.png" alt="">
+                    </figure>
+
+                    <div class="pet-infos dspl-flex flex__direc-column justy__cont-center">
+
+                        <h3 class="text-4 font-w600"><span>Nome:</span>Nome</h3>
+                        <h3 class="text-4 font-w600"><span>Espécie:</span>Raça</h3>
+                        <h3 class="text-4 font-w600"><span>Adotável:</span>Sim</h3>
+
+                        <button id="update-pet" class="default-fill-btn">Atualizar</button>
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <span>KenziePets | Todos os Direitos Reservados</span>
+    </footer>
+
+    <script type="module" src="./profile.js"></script>
+</body>
+</html>

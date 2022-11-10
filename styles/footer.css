@@ -1,0 +1,14 @@
+.main-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    /* position: absolute; */
+    width: 100%;
+    height: 48px;
+    left: 0px;
+    top: 882px;
+    background: var(--gray300);
+    color: var(--brand100);
+}
